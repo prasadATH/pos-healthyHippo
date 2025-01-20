@@ -533,7 +533,6 @@ const savedTables = JSON.parse(localStorage.getItem("tables")) || [
     number: 1,
     orderId: generateOrderId(),
     products: [],
-    cash: 0.0,
     balance: 0,
     custom_discount: 0.0,
     custom_discount_type: "percent",
@@ -786,6 +785,7 @@ const submitOrder = async () => {
       userId: props.loggedInUser.id,
       orderId: selectedTable.value.orderId,
       custom_discount: customDiscCalculated.value,
+      cash: selectedTable.value.cash,
       delivery_charge: selectedTable.value.delivery_charge,
       kitchen_note: selectedTable.value.kitchen_note,
       

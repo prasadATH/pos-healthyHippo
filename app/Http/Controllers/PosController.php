@@ -89,8 +89,7 @@ class PosController extends Controller
     }
 
     public function submit(Request $request)
-    {
-
+    {  
         if (!Gate::allows('hasRole', ['Admin', 'Cashier'])) {
             abort(403, 'Unauthorized');
         }
