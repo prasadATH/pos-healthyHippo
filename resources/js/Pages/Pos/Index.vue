@@ -174,7 +174,7 @@
                 <img src="/images/selectpsoduct.svg" class="w-6 h-6 ml-2" />
               </span>
             </div>
-            <div v-if="selectedTable?.id === 'default'" class="flex items-center ml-4">
+            <div v-if="selectedTable?.id === 'default'" class="flex items-center ml-4 mb-4">
               <label for="deliveryOption" class="text-xl font-bold text-black mr-4">
                 Order Type:
               </label>
